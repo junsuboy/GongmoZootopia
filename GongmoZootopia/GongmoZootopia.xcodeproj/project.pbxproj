@@ -13,6 +13,8 @@
 		8B6D330627FDE93B00F4410C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D330427FDE93B00F4410C /* Main.storyboard */; };
 		8B6D330827FDE93C00F4410C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D330727FDE93C00F4410C /* Assets.xcassets */; };
 		8B6D330B27FDE93C00F4410C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6D330927FDE93C00F4410C /* LaunchScreen.storyboard */; };
+		8B6D331327FE11F100F4410C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D331227FE11F100F4410C /* SettingViewController.swift */; };
+		8B6D331527FE133700F4410C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D331427FE133700F4410C /* RoundButton.swift */; };
 		FD9F0DA56720C0CD56EBA083 /* Pods_GongmoZootopia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC415A12543D940BC057406B /* Pods_GongmoZootopia.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		8B6D330727FDE93C00F4410C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B6D330A27FDE93C00F4410C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B6D330C27FDE93C00F4410C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6D331227FE11F100F4410C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8B6D331427FE133700F4410C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		BC415A12543D940BC057406B /* Pods_GongmoZootopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GongmoZootopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CC1A669847D37A3F4CFBA0 /* Pods-GongmoZootopia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GongmoZootopia.release.xcconfig"; path = "Target Support Files/Pods-GongmoZootopia/Pods-GongmoZootopia.release.xcconfig"; sourceTree = "<group>"; };
 		E6CAA1C542142D6257A37B00 /* Pods-GongmoZootopia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GongmoZootopia.debug.xcconfig"; path = "Target Support Files/Pods-GongmoZootopia/Pods-GongmoZootopia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				8B6D330727FDE93C00F4410C /* Assets.xcassets */,
 				8B6D330927FDE93C00F4410C /* LaunchScreen.storyboard */,
 				8B6D330C27FDE93C00F4410C /* Info.plist */,
+				8B6D331227FE11F100F4410C /* SettingViewController.swift */,
+				8B6D331427FE133700F4410C /* RoundButton.swift */,
 			);
 			path = GongmoZootopia;
 			sourceTree = "<group>";
@@ -80,7 +86,6 @@
 				E6CAA1C542142D6257A37B00 /* Pods-GongmoZootopia.debug.xcconfig */,
 				D7CC1A669847D37A3F4CFBA0 /* Pods-GongmoZootopia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6D330327FDE93B00F4410C /* ViewController.swift in Sources */,
+				8B6D331527FE133700F4410C /* RoundButton.swift in Sources */,
 				8B6D32FF27FDE93B00F4410C /* AppDelegate.swift in Sources */,
 				8B6D330127FDE93B00F4410C /* SceneDelegate.swift in Sources */,
+				8B6D331327FE11F100F4410C /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
