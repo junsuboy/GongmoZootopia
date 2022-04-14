@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.5.0)
   - FSCalendar (2.8.2)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - FSCalendar
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - FSCalendar
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: a62fe6d60454aff2eb7d5d9049fcdc816f5f147c
+PODFILE CHECKSUM: 7383657d109fe4bf084b45e6206b1ea7ed16b545
 
 COCOAPODS: 1.11.2
