@@ -82,9 +82,9 @@ class GongmoZooCell: UITableViewCell {
         
         var zuganArray = [String]()
         zuganArray = gongmoZoo.underwriter?.components(separatedBy: ",") ?? [String]()
-        zuganLabel?.text = gongmoZoo.underwriter
-        
-        zuganLabel?.text = zuganSummary(zuganCompany: gongmoZoo.underwriter ?? "")
+//        zuganLabel?.text = gongmoZoo.underwriter
+//
+//        zuganLabel?.text = zuganSummary(zuganCompany: gongmoZoo.underwriter ?? "")
 //        zugan2Label?.text = gongmoZoo.underwriter
 //        zugan3Label?.text = gongmoZoo.underwriter
 //        zugan4Label?.text = gongmoZoo.underwriter
@@ -116,80 +116,96 @@ class GongmoZooCell: UITableViewCell {
 //            }
 //        }
         
-//        if((zuganArray.count) != 0) {
-//            for i in 0...(zuganArray.count) {
-//        if zuganArray.count > 0 {
-//            zuganLabel?.text = zuganSummary(zuganCompnay: zuganArray[0])
-//            zuganLabel?.clipsToBounds = true
-//            zuganLabel?.layer.masksToBounds = true
-//            zuganLabel?.layer.cornerRadius = 3
-//            zuganLabel?.layer.borderWidth = 1
-//        }
-//        if zuganArray.count > 1 {
-//            zugan2Label?.text = zuganSummary(zuganCompnay: zuganArray[1])
-//            zugan2Label?.clipsToBounds = true
-//            zugan2Label?.layer.masksToBounds = true
-//            zugan2Label?.layer.cornerRadius = 3
-//            zugan2Label?.layer.borderWidth = 1
-//        }
-//                if i == 3 {
-//                    zugan3Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan3Label?.clipsToBounds = true
-//                    zugan3Label?.layer.masksToBounds = true
-//                    zugan3Label?.layer.cornerRadius = 3
-//                    zugan3Label?.layer.borderWidth = 1
-//                }
-//                if i == 4 {
-//                    zugan4Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan4Label?.clipsToBounds = true
-//                    zugan4Label?.layer.masksToBounds = true
-//                    zugan4Label?.layer.cornerRadius = 3
-//                    zugan4Label?.layer.borderWidth = 1
-//                }
-//                if i == 5 {
-//                    zugan5Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan5Label?.clipsToBounds = true
-//                    zugan5Label?.layer.masksToBounds = true
-//                    zugan5Label?.layer.cornerRadius = 3
-//                    zugan5Label?.layer.borderWidth = 1
-//                }
-//                if i == 6 {
-//                    zugan6Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan6Label?.clipsToBounds = true
-//                    zugan6Label?.layer.masksToBounds = true
-//                    zugan6Label?.layer.cornerRadius = 3
-//                    zugan6Label?.layer.borderWidth = 1
-//                }
-//                if i == 7 {
-//                    zugan7Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan7Label?.clipsToBounds = true
-//                    zugan7Label?.layer.masksToBounds = true
-//                    zugan7Label?.layer.cornerRadius = 3
-//                    zugan7Label?.layer.borderWidth = 1
-//                }
-//                if i == 8 {
-//                    zugan8Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan8Label?.clipsToBounds = true
-//                    zugan8Label?.layer.masksToBounds = true
-//                    zugan8Label?.layer.cornerRadius = 3
-//                    zugan8Label?.layer.borderWidth = 1
-//                }
-//                if i == 9 {
-//                    zugan9Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan9Label?.clipsToBounds = true
-//                    zugan9Label?.layer.masksToBounds = true
-//                    zugan9Label?.layer.cornerRadius = 3
-//                    zugan9Label?.layer.borderWidth = 1
-//                }
-//                if i == 10 {
-//                    zugan10Label?.text = zuganSummary(zuganCompnay: zuganArray[i-1])
-//                    zugan10Label?.clipsToBounds = true
-//                    zugan10Label?.layer.masksToBounds = true
-//                    zugan10Label?.layer.cornerRadius = 3
-//                    zugan10Label?.layer.borderWidth = 1
-//                }
-//            }
-//        }
+        if((zuganArray.count) != 0) {
+            for i in 0...(zuganArray.count) {
+                //        if zuganArray.count > 0 {
+                //            zuganLabel?.text = zuganSummary(zuganCompnay: zuganArray[0])
+                //            zuganLabel?.clipsToBounds = true
+                //            zuganLabel?.layer.masksToBounds = true
+                //            zuganLabel?.layer.cornerRadius = 3
+                //            zuganLabel?.layer.borderWidth = 1
+                //        }
+                //        if zuganArray.count > 1 {
+                //            zugan2Label?.text = zuganSummary(zuganCompnay: zuganArray[1])
+                //            zugan2Label?.clipsToBounds = true
+                //            zugan2Label?.layer.masksToBounds = true
+                //            zugan2Label?.layer.cornerRadius = 3
+                //            zugan2Label?.layer.borderWidth = 1
+                //        }
+                if i == 1 {
+                    zuganLabel?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zuganLabel?.clipsToBounds = true
+                    zuganLabel?.layer.masksToBounds = true
+                    zuganLabel?.layer.cornerRadius = 3
+                    zuganLabel?.layer.borderWidth = 1
+                }
+                if i == 2{
+                    zugan2Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan2Label?.clipsToBounds = true
+                    zugan2Label?.layer.masksToBounds = true
+                    zugan2Label?.layer.cornerRadius = 3
+                    zugan2Label?.layer.borderWidth = 1
+                }
+                
+                
+                if i == 3 {
+                    zugan3Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan3Label?.clipsToBounds = true
+                    zugan3Label?.layer.masksToBounds = true
+                    zugan3Label?.layer.cornerRadius = 3
+                    zugan3Label?.layer.borderWidth = 1
+                }
+                if i == 4 {
+                    zugan4Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan4Label?.clipsToBounds = true
+                    zugan4Label?.layer.masksToBounds = true
+                    zugan4Label?.layer.cornerRadius = 3
+                    zugan4Label?.layer.borderWidth = 1
+                }
+                if i == 5 {
+                    zugan5Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan5Label?.clipsToBounds = true
+                    zugan5Label?.layer.masksToBounds = true
+                    zugan5Label?.layer.cornerRadius = 3
+                    zugan5Label?.layer.borderWidth = 1
+                }
+                if i == 6 {
+                    zugan6Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan6Label?.clipsToBounds = true
+                    zugan6Label?.layer.masksToBounds = true
+                    zugan6Label?.layer.cornerRadius = 3
+                    zugan6Label?.layer.borderWidth = 1
+                }
+                if i == 7 {
+                    zugan7Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan7Label?.clipsToBounds = true
+                    zugan7Label?.layer.masksToBounds = true
+                    zugan7Label?.layer.cornerRadius = 3
+                    zugan7Label?.layer.borderWidth = 1
+                }
+                if i == 8 {
+                    zugan8Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan8Label?.clipsToBounds = true
+                    zugan8Label?.layer.masksToBounds = true
+                    zugan8Label?.layer.cornerRadius = 3
+                    zugan8Label?.layer.borderWidth = 1
+                }
+                if i == 9 {
+                    zugan9Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan9Label?.clipsToBounds = true
+                    zugan9Label?.layer.masksToBounds = true
+                    zugan9Label?.layer.cornerRadius = 3
+                    zugan9Label?.layer.borderWidth = 1
+                }
+                if i == 10 {
+                    zugan10Label?.text = zuganSummary(zuganCompany: zuganArray[i-1])
+                    zugan10Label?.clipsToBounds = true
+                    zugan10Label?.layer.masksToBounds = true
+                    zugan10Label?.layer.cornerRadius = 3
+                    zugan10Label?.layer.borderWidth = 1
+                }
+            }
+        }
     }
     
 }
