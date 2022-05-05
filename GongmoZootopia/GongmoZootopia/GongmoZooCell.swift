@@ -70,7 +70,7 @@ class GongmoZooCell: UITableViewCell {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         dateFormatter.timeZone = NSTimeZone(name: "ko_KR") as TimeZone?
         
-        if(dateFormatter.date(from: gongmoZoo.ipoEndDate!)! >= now) {
+        if(dateFormatter.date(from: gongmoZoo.ipoEndDate ?? "2022-01-01")! >= now) {
             ipoLabel?.text = "청약예정일"
         } else {
             ipoLabel?.text = "상장완료"
