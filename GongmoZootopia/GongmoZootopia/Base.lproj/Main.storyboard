@@ -11,7 +11,7 @@
         <!--캘린더-->
         <scene sceneID="gSq-8D-tMJ">
             <objects>
-                <viewController id="DUH-FC-Re4" sceneMemberID="viewController">
+                <viewController id="DUH-FC-Re4" customClass="CalendarViewController" customModule="GongmoZootopia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9oT-WK-i9T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="캘린더" image="calendar" catalog="system" selectedImage="calendar" id="zAi-PU-7mk"/>
+                    <connections>
+                        <outlet property="calendar" destination="49p-zc-v2o" id="4ba-aK-9np"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZg-Jj-JtG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

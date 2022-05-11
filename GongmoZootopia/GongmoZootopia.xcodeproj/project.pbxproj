@@ -23,6 +23,7 @@
 		8B80FF8A28222DD70006AD8D /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FF8928222DD70006AD8D /* PaddingLabel.swift */; };
 		8B80FF8C282230380006AD8D /* PaddingLabelDday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FF8B282230380006AD8D /* PaddingLabelDday.swift */; };
 		8B80FF8E2822361B0006AD8D /* PaddingZuganLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FF8D2822361B0006AD8D /* PaddingZuganLabel.swift */; };
+		8BD95655282A6C8C00FBA4F4 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD95654282A6C8C00FBA4F4 /* CalendarViewController.swift */; };
 		FD9F0DA56720C0CD56EBA083 /* Pods_GongmoZootopia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC415A12543D940BC057406B /* Pods_GongmoZootopia.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		8B80FF8928222DD70006AD8D /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		8B80FF8B282230380006AD8D /* PaddingLabelDday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabelDday.swift; sourceTree = "<group>"; };
 		8B80FF8D2822361B0006AD8D /* PaddingZuganLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingZuganLabel.swift; sourceTree = "<group>"; };
+		8BD95654282A6C8C00FBA4F4 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		BC415A12543D940BC057406B /* Pods_GongmoZootopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GongmoZootopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CC1A669847D37A3F4CFBA0 /* Pods-GongmoZootopia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GongmoZootopia.release.xcconfig"; path = "Target Support Files/Pods-GongmoZootopia/Pods-GongmoZootopia.release.xcconfig"; sourceTree = "<group>"; };
 		E6CAA1C542142D6257A37B00 /* Pods-GongmoZootopia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GongmoZootopia.debug.xcconfig"; path = "Target Support Files/Pods-GongmoZootopia/Pods-GongmoZootopia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				8B80FF8928222DD70006AD8D /* PaddingLabel.swift */,
 				8B80FF8B282230380006AD8D /* PaddingLabelDday.swift */,
 				8B80FF8D2822361B0006AD8D /* PaddingZuganLabel.swift */,
+				8BD95654282A6C8C00FBA4F4 /* CalendarViewController.swift */,
 			);
 			path = GongmoZootopia;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				8B6D33A728081F4F00F4410C /* StockDetailViewController.swift in Sources */,
 				8B6D331527FE133700F4410C /* RoundButton.swift in Sources */,
 				8B6D33A9280830B600F4410C /* HomeViewController.swift in Sources */,
+				8BD95655282A6C8C00FBA4F4 /* CalendarViewController.swift in Sources */,
 				8B80FF8A28222DD70006AD8D /* PaddingLabel.swift in Sources */,
 				8B6D32FF27FDE93B00F4410C /* AppDelegate.swift in Sources */,
 				8B6D330127FDE93B00F4410C /* SceneDelegate.swift in Sources */,

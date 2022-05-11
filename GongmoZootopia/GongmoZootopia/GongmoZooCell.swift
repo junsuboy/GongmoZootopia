@@ -37,9 +37,16 @@ class GongmoZooCell: UITableViewCell {
     }
     
     func configure(with gongmoZoo: GongmoZoo) {
-        marketLabel?.text = gongmoZoo.stockExchange
-        marketLabel?.textColor = .white
-        marketLabel?.backgroundColor = .blue
+        if let stockExchange = gongmoZoo.stockExchange {
+            marketLabel?.textColor = .white
+            marketLabel?.backgroundColor = .blue
+            marketLabel?.text = stockExchange
+        } else {
+            marketLabel?.textColor = .black
+            marketLabel?.backgroundColor = .orange
+            marketLabel?.text = "확인 필요"
+        }
+        
         marketLabel?.clipsToBounds = true
         marketLabel?.layer.masksToBounds = true
         marketLabel?.layer.cornerRadius = 5
