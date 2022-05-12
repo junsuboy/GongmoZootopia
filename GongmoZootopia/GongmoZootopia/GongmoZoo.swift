@@ -52,12 +52,14 @@ struct Ipo: Codable {
     let stockExchange: String
     let profits: Int
     let sales: Int
-    let ipoForecastDate: String
+    let ipoForecastStart: String?
+    let ipoForecastEnd: String?
     let ipoStartDate: String
     let ipoEndDate: String
     let ipoRefundDate: String
-    let ipoDebutDate: String
+    let ipoDebutDate: String?
     let ipoPrice: Int
     let ipoPriceLow: Int
     let ipoPriceHigh: Int
+    let sector: String?
 }

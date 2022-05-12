@@ -56,7 +56,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         
 //        detailViewController.id = selectedGongmoZoo
 //        self.show(detailViewController, sender: self)
-        
     
         nextVC.id = selectedGongmoZoo
         self.present(nextVC, animated: true)

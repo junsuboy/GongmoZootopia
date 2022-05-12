@@ -28,13 +28,25 @@ class StockDetailViewController: UIViewController {
     
     
     func configureView(ipoInformation: StockDetail) {
-        self.ipoPriceLabel.text = "\(ipoInformation.ipo.ipoPrice)"
+        if(ipoInformation.ipo.ipoPrice == 0) {
+            self.ipoPriceLabel.text = "미정"
+        } else {
+            self.ipoPriceLabel.text = "\(ipoInformation.ipo.ipoPrice)"
+        }
         self.ipoPriceBandLabel.text = "\(ipoInformation.ipo.ipoPriceLow) ~ \(ipoInformation.ipo.ipoPriceHigh)원"
-        self.ipoForecastDateLabel.text = ipoInformation.ipo.ipoForecastDate
+        self.ipoForecastDateLabel.text = "미정"
         self.ipoEndDateLabel.text = ipoInformation.ipo.ipoStartDate
         self.ipoRefundDateLabel.text = ipoInformation.ipo.ipoRefundDate
-        self.ipoDebutDateLabel.text = ipoInformation.ipo.ipoDebutDate
-        self.stockWorkTypeLabel.text = "확인 필요"
+        if(ipoInformation.ipo.ipoDebutDate != nil) {
+            self.ipoDebutDateLabel.text = "미정"
+        } else {
+            self.ipoDebutDateLabel.text = ipoInformation.ipo.ipoDebutDate
+        }
+        if(ipoInformation.ipo.sector != nil) {
+            self.stockWorkTypeLabel.text = ipoInformation.ipo.sector
+        } else {
+            self.stockWorkTypeLabel.text = "확인필요"
+        }
         self.stockExchangeLabel.text = ipoInformation.ipo.stockExchange
         if(ipoInformation.ipo.sales == 0) {
             self.earnLabel.text = "확인 필요"
