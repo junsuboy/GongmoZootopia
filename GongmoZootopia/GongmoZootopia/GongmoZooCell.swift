@@ -25,10 +25,17 @@ class GongmoZooCell: UITableViewCell {
     @IBOutlet weak var zugan10Label: UILabel!
     @IBOutlet weak var ipoLabel: UILabel!
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        self.accessoryType = .none
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -71,6 +78,7 @@ class GongmoZooCell: UITableViewCell {
         ddayLabel?.layer.masksToBounds = true
         ddayLabel?.layer.cornerRadius = 3
         
+        print(gongmoZoo.underwriter)
         
         let now = Date()
         let dateFormatter = DateFormatter()
@@ -85,7 +93,6 @@ class GongmoZooCell: UITableViewCell {
             ddayLabel?.text = ""
             ddayLabel?.backgroundColor = .clear
         }
-        
         
         var zuganArray = [String]()
         zuganArray = gongmoZoo.underwriter?.components(separatedBy: ",") ?? [String]()
@@ -122,7 +129,6 @@ class GongmoZooCell: UITableViewCell {
 //                zugan2Label?.layer.borderWidth = 1
 //            }
 //        }
-        
         if((zuganArray.count) != 0) {
             for i in 0...(zuganArray.count) {
                 //        if zuganArray.count > 0 {

@@ -35,7 +35,7 @@ extension CalendarViewController: FSCalendarDelegate, FSCalendarDataSource, FSCa
     func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
         switch dateFormatter.string(from: date) {
         case dateFormatter.string(from: Date()):
-            return "오늘"
+            return "라이브러리변경예정"
         case "2022-05-12":
             return "출근"
         case "2022-05-13":
